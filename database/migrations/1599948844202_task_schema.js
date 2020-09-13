@@ -30,6 +30,7 @@ class TaskSchema extends Schema {
         .onUpdate('CASCADE')
         .onDelete('SET NULL')
       table.string('title').notNullable()
+      table.text('description')
       table.timestamp('due_date')
       table.timestamps()
     })
